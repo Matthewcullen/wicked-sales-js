@@ -38,7 +38,7 @@ app.get('/api/products/:productId', (req, res, next) => {
   const sql = `
   select *
     from "products"
-    where "productId" = '$1'
+    where "productId" = $1
   `;
   const values = [pId];
   db.query(sql, values)
