@@ -1,3 +1,18 @@
 * {
   box-sizing: border-box;
 }
+header {
+   font-size: 1rem;
+   background-color: #343A40;
+   color: white;
+ }
+
+h1 {
+  margin-left: 2rem;
+  font-size: 2rem;
+  }
+
+.pImg {
+  height: 6rem;
+  object-fit: contain;
+  }
