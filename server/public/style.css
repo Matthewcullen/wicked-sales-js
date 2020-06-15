@@ -16,3 +16,8 @@ h1 {
   height: 6rem;
   object-fit: contain;
   }
+
+.pDImg {
+  height: 50vh;
+  object-fit: contain;
+}
