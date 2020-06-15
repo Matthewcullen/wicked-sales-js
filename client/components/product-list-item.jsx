@@ -5,7 +5,7 @@ export default class ProductListItem extends React.Component {
   render() {
     const p = this.props.product;
     return (
-      <div className="card col-3 m-2" >
+      <div onClick={() => this.props.setView('details', { productId: p.productId })} className="card col-3 m-2" >
         <img src={p.image} className="card-img-top pImg" alt=""/>
         <div className="card-body">
           <h5 className="card-title">
