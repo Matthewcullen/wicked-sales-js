@@ -32,6 +32,10 @@ export default class App extends React.Component {
       .catch(err => console.error(err.message));
   }
 
+  componentDidMount() {
+    this.getCartItems();
+  }
+
   render() {
     const v = this.state.view;
     const display = v.name === 'catalog'
