@@ -10,7 +10,8 @@ export default class App extends React.Component {
       view: {
         name: 'catalog',
         params: {}
-      }
+      },
+      cart: []
     };
     this.setView = this.setView.bind(this);
   }
@@ -22,6 +23,13 @@ export default class App extends React.Component {
         params: params
       }
     });
+  }
+
+  getCartItems() {
+    fetch('/api/cart')
+      .then(res => res.json())
+      .then(data => this.setState({ product: data }))
+      .catch(err => console.error(err.message));
   }
 
   render() {
